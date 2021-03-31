@@ -55,7 +55,7 @@ namespace LRU_Impl
                 {
                     cache.Remove(key);
                 }
-                cache.AddFirst(new LinkedListNode<int>(key));
+                cache.AddFirst(key);
                 reference[key] = value;
             }
         }
